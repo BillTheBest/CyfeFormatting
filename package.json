@@ -1,7 +1,8 @@
 {
-  "name": "extension-skeleton",
-  "version": "0.1.2",
-  "description": "Bare Google Chrome extension skeleton.",
+  "name": "Cyfe-formatting",
+  "version": "0.0.3",
+  "description": "Cyfe conditional formatting of tables.",
+  "url": "https://chrome.google.com/webstore/detail/cyfe-formatting/kfbbcfkibfhoomjcfipplchhlolpodnp",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.5",
