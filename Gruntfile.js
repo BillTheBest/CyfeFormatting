@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 
     mkdir: {
       unpacked: { options: { create: ['build/unpacked-dev', 'build/unpacked-prod'] } },
-      js: { options: { create: ['build/unpacked-dev/js'] } }
+      js: { options: { create: ['build/unpacked-dev/js/libs'] } }
     },
 
     jshint: {
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       main: { files: [ {
         expand: true,
         cwd: 'code/',
-        src: ['**', '!js/**', '!**/*.md'],
+        src: ['**', '!js/modules/**', '!**/*.md'],
         dest: 'build/unpacked-dev/'
       } ] },
       prod: { files: [ {

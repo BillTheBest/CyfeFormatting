@@ -14,12 +14,8 @@
         "matches": ["https://app.cyfe.com/*"],
         "js": ["js/libs/jquery.js", "js/default.js", "js/app.cyfe.com.js"]
     }],
-    "options_page": "html/options.html",
     "devtools_page": "html/devtools.html",
-    "permissions": ["https://app.cyfe.com/"],
+    "permissions": ["https://app.cyfe.com/*"],
     "web_accessible_resources": ["js/*", "html/*", "css/*", "images/*"],
-    "content_security_policy": "script-src 'self'; object-src 'self'",
-    "name": "Cyfe-formatting",
-    "version": "0.0.3",
-    "description": "Cyfe conditional formatting of tables."
+    "content_security_policy": "script-src 'self'; object-src 'self'"
 }

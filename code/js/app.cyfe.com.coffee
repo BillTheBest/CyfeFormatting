@@ -32,13 +32,8 @@ WidgetFormatter =
             $tds = $(this).find 'td'
             # Remove 1000-separator
             value = $tds.eq(formatColumn-1).text().replace /,/g, ''
-            parseFloat value
-            # if isNaN num
-            #     console.log "Error w/ ##{formatColumn} '#{$tds.eq(formatColumn).text()}'"
-            #     value
-            # else
-            #     console.log "Value is #{num} in ##{formatColumn} '#{$tds.eq(formatColumn).text()}'"
-            #     num
+            num = parseFloat value
+            return if isNaN num then 0 else num
         ,
             # Color the the div inside the same column/cell
             elementFunction: -> $(this).find "td:nth-child(#{formatColumn}) > div"
@@ -55,7 +50,7 @@ WidgetFormatter =
                 .contents()
             # To format, it must be a table with at least 3 rows
             thirdCol = iframe
-                .find "table#table_content tr:nth-child(2)"
+                .find "table#table_content tr:nth-child(3)"
             if thirdCol.length > 0
                 columns = []
                 thirdCol.find 'td'
@@ -83,6 +78,7 @@ FormatWidgets =
 
 refreshInterval = setInterval ->
     widgets = WidgetFormatter.find()
+    console.log widgets
     FormatWidgets.run(widgets)
     #clearInterval refreshInterval
 , 5000
