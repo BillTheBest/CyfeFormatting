@@ -1,4 +1,4 @@
-if window.parent is window.top
+if window.self isnt window.top
     console.log "Initiate iframe"
     frame_loaded = ->
         console.log "frame_loaded"

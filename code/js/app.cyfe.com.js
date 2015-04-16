@@ -55,4 +55,9 @@ WidgetFormatter = {
   }
 };
 
-console.log("Initiate");
+if (window.self === window.top) {
+  $(document).ready(function() {
+    WidgetFormatter.addGlobalStyle("#dashboard-container .widget .widget-head { background: #333; }");
+    return console.log("Initiate");
+  });
+}
