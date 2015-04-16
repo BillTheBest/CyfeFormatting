@@ -1,5 +1,7 @@
 {
     "manifest_version": 2,
+    "name": "Cyfe dev version",
+    "version": "0.1.0",
     "icons": {
         "128": "images/icon.png"
     },
@@ -11,8 +13,10 @@
         "scripts": ["js/background.js"]
     },
     "content_scripts": [{
+        "all_frames": true,
+        "run_at": "document_start",
         "matches": ["https://app.cyfe.com/*"],
-        "js": ["js/libs/jquery.js", "js/default.js", "js/app.cyfe.com.js"]
+        "js": ["js/libs/jquery.js", "js/default.js", "js/app.cyfe.com.js", "js/iframe.js"]
     }],
     "devtools_page": "html/devtools.html",
     "permissions": ["https://app.cyfe.com/*"],
