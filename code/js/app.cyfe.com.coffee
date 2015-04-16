@@ -30,16 +30,6 @@ WidgetFormatter =
             elementFunction: -> $(this).find "td:nth-child(#{formatColumn}) > div"
             lightness: 0
             colorStyle: 'greentored'
-    sortTables: () ->
-        $ "#table_head tr"
-            .clone()
-            .appendTo $(document.createElement('thead')).prependTo("#table_content")
-        $ "#table_content"
-            .tablesorter
-                debug: true
-
-            
-
 
     findFormatableColumns: () ->
         # To format, there must be a table with at least 3 rows

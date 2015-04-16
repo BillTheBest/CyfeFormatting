@@ -37,12 +37,6 @@ WidgetFormatter = {
       colorStyle: 'greentored'
     });
   },
-  sortTables: function() {
-    $("#table_head tr").clone().appendTo($(document.createElement('thead')).prependTo("#table_content"));
-    return $("#table_content").tablesorter({
-      debug: true
-    });
-  },
   findFormatableColumns: function() {
     var columns, thirdCol;
     thirdCol = $(document).find("table#table_content tr:nth-child(3)");

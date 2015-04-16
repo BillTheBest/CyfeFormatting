@@ -16,7 +16,7 @@
         "all_frames": true,
         "run_at": "document_start",
         "matches": ["https://app.cyfe.com/*"],
-        "js": ["js/libs/jquery.js", "js/libs/jquery.tablesorter.combined.min.js", "js/default.js", "js/app.cyfe.com.js", "js/iframe.js"]
+        "js": ["js/libs/jquery.js", "js/default.js", "js/app.cyfe.com.js", "js/iframe.js"]
     }],
     "devtools_page": "html/devtools.html",
     "permissions": ["https://app.cyfe.com/*"],

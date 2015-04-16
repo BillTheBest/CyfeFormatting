@@ -13,7 +13,6 @@ if window.self isnt window.top
 
         setTimeout ->
             WidgetFormatter.findFormatableColumns()
-            WidgetFormatter.sortTables()
         , 5000  
 
 
