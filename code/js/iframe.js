@@ -7,7 +7,8 @@ if (window.self !== window.top) {
     console.log("frame_loaded");
     WidgetFormatter.addGlobalStyle("div.widget-formatter { border-radius: 2px; color: #EEE; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8); max-width: 50px; margin: 0 5px 0 5px; }");
     return setTimeout(function() {
-      return WidgetFormatter.findFormatableColumns();
+      WidgetFormatter.findFormatableColumns();
+      return WidgetFormatter.sortTables();
     }, 5000);
   };
   $(window).load(function() {

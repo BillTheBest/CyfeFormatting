@@ -3,7 +3,9 @@
   "version": "0.0.6",
   "description": "Cyfe conditional formatting of tables.",
   "url": "https://chrome.google.com/webstore/detail/cyfe-formatting/kfbbcfkibfhoomjcfipplchhlolpodnp",
-  "dependencies": {},
+  "dependencies": {
+    "tablesorter": "^2"
+    },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.6.0",
