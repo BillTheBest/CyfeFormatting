@@ -50,9 +50,8 @@ WidgetFormatter =
 
 if window.self is window.top
     $(document).ready () ->
-        WidgetFormatter.addGlobalStyle "#dashboard-container .widget .widget-head {
-                background: #333;
-            }"
+        $ "#dashboard-container .widget .widget-head"
+            .css "background", "#333"
         console.log "Initiate"
 
 
